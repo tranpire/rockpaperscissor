@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> ROCK, PAPER, SCISSOR </h1>
+<h3> GO! </h3>
+<button type="button" name=“rock” value=“rock”>ROCK</button>
+<button type="button" name=“paper” value=“paper”>PAPER</button>
+<button type="button" name=“scissor” value=“scissor”>SCISSOR</button>
+
+
+
+
+
+</html>

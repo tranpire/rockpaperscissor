@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> ROCK, PAPER, SCISSOR </h1>
+<h3> GO! </h3>
+
+<button onclick="playRound('rock')">ROCK</button>
+<button onclick="playRound('paper')">PAPER</button>
+<button onclick="playRound('scissor')">SCISSOR</button>
+
+
+
+
+
+<script>
+var readable = [
+    'rock',
+    'paper',
+    'scissor'
+];
+   
+function computerPlay(){
+ var random = Math.floor(Math.random()*3);
+ return readable[random];
+}
+
+function playRound (userselection) {
+    var computerSelection = computerPlay();
+
+    var popup;
+
+    if (userselection == computerSelection) {
+        alert ("ITS A TIE");
+    }
+
+    if (userselection == 'rock') {
+            if (computerSelection=='paper'){
+                alert ("YOU LOSE");
+            }
+
+            if (computerSelection=='scissor'){
+                alert ("YOU WIN");
+            }
+    }
+        
+        
+
+    if (userselection == 'paper') {
+        if (computerSelection=='rock'){
+            alert ("YOU WIN");
+        }
+        if (computerSelection=='scissor'){
+            alert ("YOU LOSE");
+        }
+    }
+
+
+    if (userselection == 'scissor') {
+        if (computerSelection=='rock'){
+            alert ("YOU LOSE");
+        }
+    }
+    if (userselection == 'scissor') {
+        if (computerSelection=='paper'){
+            alert ("YOU WIN");
+        }
+
+    }
+}
+
+
+
+</script>
+
+</body>
+</html>
